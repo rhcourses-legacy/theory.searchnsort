@@ -6,7 +6,13 @@
 \AtBeginSection{
     \begin{frame}
         \frametitle{Themenüberblick}
-        \tableofcontents[currentsection]
+        \tableofcontents[sectionstyle={show/shaded}, subsectionstyle={show/hide/hide}]
+    \end{frame}
+}
+\AtBeginSubsection{
+    \begin{frame}
+        \frametitle{Themenüberblick}
+        \tableofcontents[sectionstyle={show/shaded}, subsectionstyle={show/shaded/hide}]
     \end{frame}
 }
 
@@ -17,7 +23,7 @@
 
     \begin{frame}
         \frametitle{Themenüberblick}
-        \tableofcontents
+        \tableofcontents[hideallsubsections]
     \end{frame}
 
     \inputframesection{Suchverfahren}{searching.tex}
